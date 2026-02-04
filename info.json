@@ -1,0 +1,8 @@
+{
+    "author" : ["eti"],
+    "install_msg" : "Thank you for installing my repo!",
+    "name" : "eti-cogs",
+    "short" : "Eti's cogs for Red-DiscordBot!",
+    "description" : "Eti's cogs for Red-DiscordBot!",
+    "tags" : ["utility", "functionalities"]
+}
