@@ -1,23 +1,18 @@
-# LinkReplace (Red v3 Cog)
+# Cogs for Red-DiscordBot
+This is my cog repository for [Red-DiscordBot](https://github.com/Cog-Creators/Red-DiscordBot), a multifunctional discord bot!
 
-Resends only matched links with domain replacements in configured channels.
+## Installation
 
-## Install
-
-Add this folder to a Red cog path, then:
-
+Load the downloader:
 ```
-[p]load linkreplace
+[p]load downloader
 ```
-
-## Configure
-
+Add this repository:
 ```
-[p]linkreplace channel add
-[p]linkreplace rule add x.com xproxy.com
+[p]repo add eti-cogs https://github.com/etidurner/eti-cogs
 ```
 
-## Notes
-
-- Only configured channels are monitored.
-- Only matched link(s) are re-sent; the rest of the message is not reposted.
+## Available cogs
+| Name  | Description |
+| ------------- | ------------- 
+| linkreplace  | Resends links based on configured rules.
