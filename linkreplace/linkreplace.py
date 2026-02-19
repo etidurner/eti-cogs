@@ -8,7 +8,7 @@ import discord
 from redbot.core import Config, commands
 
 URL_REGEX = re.compile(
-    r"(?P<url>(?:https?://)?[A-Za-z0-9.-]+\.[A-Za-z]{2,}(?:/[^"]*?)?)",
+    r'(?P<url>(?:https?://)?[A-Za-z0-9.-]+\.[A-Za-z]{2,}(?:/[^"]*?)?)',
     re.IGNORECASE,
 )
 
