@@ -8,7 +8,7 @@ import discord
 from redbot.core import Config, commands
 
 URL_REGEX = re.compile(
-    r"(?P<url>(?:https?://)?[A-Za-z0-9.-]+\.[A-Za-z]{2,}(?:/[^\s<>]*)?)",
+    r"(?P<url>(?:https?://)?[A-Za-z0-9.-]+\.[A-Za-z]{2,}(?:/[^"]*?)?)",
     re.IGNORECASE,
 )
 
@@ -189,4 +189,5 @@ class LinkReplace(commands.Cog):
             replaced_links.append(replace_host(url, target_host))
 
         if replaced_links:
-            await message.channel.send("\n".join(replaced_links))
+            header = f"@{message.author.display_name} sent:\n"
+            await message.channel.send(header + "\n".join(replaced_links))
