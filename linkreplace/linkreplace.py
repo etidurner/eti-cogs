@@ -189,5 +189,5 @@ class LinkReplace(commands.Cog):
             replaced_links.append(replace_host(url, target_host))
 
         if replaced_links:
-            header = f"@{message.author.display_name} sent:\n"
+            header = f"{message.author.mention} sent:\n"
             await message.channel.send(header + "\n".join(replaced_links))
